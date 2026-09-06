@@ -1,0 +1,28 @@
+[project]
+name = "day5"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Md Nadeem Ansari", email = "nansari1902@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "groq>=1.7.0",
+    "pdfplumber>=0.11.10",
+    "pydantic>=2.13.5",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+day5 = "day5:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "mini_proj_1.py",
+]
